@@ -11,7 +11,7 @@ namespace UserSecrets.Tests
         public void TestMethod1()
         {
             IConfigurationBuilder config = new ConfigurationBuilder()
-                .AddUserSecrets<UnitTest1>();
+                .AddUserSecrets<UnitTest1>(true);
 
             IConfigurationRoot? Configuration = config.Build();
         }
